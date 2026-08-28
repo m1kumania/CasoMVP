@@ -2,8 +2,8 @@ package Vista;
 
 import Controlador.LoginControlador;
 import Modelo.Usuario;
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class Login extends JFrame {
     private JTextField txtCorreo;
@@ -68,7 +68,7 @@ public class Login extends JFrame {
                             "Error", JOptionPane.ERROR_MESSAGE);
                 } // Panel de Administrador
             } else {
-                new VistaEmpleado(usuario).setVisible(true); // Panel de Empleado
+                new VistaAdmin(usuario).setVisible(true); // Panel de Empleado
             }
         } else {
             JOptionPane.showMessageDialog(this, "Credenciales incorrectas o usuario inactivo.", "Error de Acceso", JOptionPane.ERROR_MESSAGE);

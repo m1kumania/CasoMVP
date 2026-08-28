@@ -3,12 +3,12 @@ package Vista;
 import Controlador.AsistenciaControlador;
 import Modelo.Asistencia;
 import Modelo.Usuario;
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 public class VistaUsuario extends JFrame {
     private Usuario adminLogueado;
@@ -89,9 +89,9 @@ public class VistaUsuario extends JFrame {
 
         // Botones CRUD
         JPanel panelBotones = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 5));
-        JButton btnCrear = new JButton("Crear (GU-01)");
-        JButton btnModificar = new JButton("Modificar (GU-02)");
-        JButton btnEliminar = new JButton("Eliminar (GU-03)");
+        JButton btnCrear = new JButton("Crear");
+        JButton btnModificar = new JButton("Modificar");
+        JButton btnEliminar = new JButton("Eliminar");
         JButton btnLimpiar = new JButton("Limpiar");
 
         panelBotones.add(btnCrear);
@@ -175,11 +175,11 @@ public class VistaUsuario extends JFrame {
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         JPanel panelFiltros = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 5));
-        JButton btnAtrasos = new JButton("Reporte Atrasos (RE-01)");
-        JButton btnSalidas = new JButton("Reporte Salidas Anticipadas (RE-02)");
+        JButton btnAtrasos = new JButton("Reporte Atrasos");
+        JButton btnSalidas = new JButton("Reporte Salidas Anticipadas");
         
         txtFechaInasistencia = new JTextField(LocalDate.now().toString(), 8);
-        JButton btnInasistencias = new JButton("Reporte Inasistencias (RE-03)");
+        JButton btnInasistencias = new JButton("Reporte Inasistencias");
 
         panelFiltros.add(btnAtrasos);
         panelFiltros.add(btnSalidas);
