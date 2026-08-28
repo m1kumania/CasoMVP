@@ -22,7 +22,7 @@ public class Login extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
-        setLayout(new BorderLayout(10, 10));
+        setLayout(new BorderLayout(15, 15));
 
         JPanel panelCentro = new JPanel(new GridLayout(3, 2, 8, 12));
         panelCentro.setBorder(BorderFactory.createEmptyBorder(25, 25, 10, 25));
@@ -53,7 +53,7 @@ public class Login extends JFrame {
 
         if (usuario != null) {
             JOptionPane.showMessageDialog(this, "Bienvenido(a) " + usuario.getNombre() + " " + usuario.getApellido());
-            this.dispose(); 
+            this.dispose();
 
             if (authController.esAdministrador(usuario)) {
                 try {

@@ -46,6 +46,7 @@ public class VistaUsuario extends JFrame {
         JPanel panelSuperior = new JPanel(new BorderLayout());
         JLabel lblTitulo = new JLabel(" Sesión activa: Administrador (" + adminLogueado.getCorreo() + ")", SwingConstants.LEFT);
         lblTitulo.setFont(new Font("Arial", Font.BOLD, 12));
+        lblTitulo.setForeground(Color.BLACK);
         JButton btnCerrar = new JButton("Cerrar Sesión");
         btnCerrar.addActionListener(e -> {
             this.dispose();
@@ -58,6 +59,17 @@ public class VistaUsuario extends JFrame {
 
         add(panelSuperior, BorderLayout.NORTH);
         add(pestanas, BorderLayout.CENTER);
+        aplicarColorTexto(getContentPane());
+    }
+
+    private void aplicarColorTexto(Component componente) {
+        componente.setForeground(Color.BLACK);
+        if (componente instanceof Container) {
+            Container contenedor = (Container) componente;
+            for (Component hijo : contenedor.getComponents()) {
+                aplicarColorTexto(hijo);
+            }
+        }
     }
 
     private JPanel crearPanelUsuarios() {

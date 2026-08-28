@@ -34,12 +34,12 @@ public class VistaAdmin extends JFrame {
         panelBotones.setBorder(BorderFactory.createEmptyBorder(10, 30, 10, 30));
 
         btnEntrada = new JButton("Marcar Entrada");
-        btnEntrada.setBackground(new Color(46, 139, 87));
-        btnEntrada.setForeground(Color.WHITE);
+        btnEntrada.setBackground(new Color(120, 255, 100));
+        btnEntrada.setForeground(Color.BLACK);
 
         btnSalida = new JButton("Marcar Salida");
-        btnSalida.setBackground(new Color(178, 34, 34));
-        btnSalida.setForeground(Color.WHITE);
+        btnSalida.setBackground(new Color(255, 100, 100));
+        btnSalida.setForeground(Color.BLACK);
 
         panelBotones.add(btnEntrada);
         panelBotones.add(btnSalida);
