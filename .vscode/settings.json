@@ -1,6 +1,11 @@
 {
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
+        "Caso MVP/lib/junit-4.13.2.jar",
+        "Caso MVP/lib/hamcrest-core-1.3.jar",
         "Caso MVP/lib/mysql-connector-j-8.3.0.jar"
-    ]
+    ],
+    "chat.tools.terminal.autoApprove": {
+        "c:\\Users\\Shado\\CasoMVP\\.maven\\maven-3.9.16\\bin\\mvn.cmd": true,
+        "javac": true
+    }
 }
